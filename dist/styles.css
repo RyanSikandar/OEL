@@ -1,0 +1,146 @@
+/* General Reset */
+body, h1, h2, p, ul, li, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Default Light Mode */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app-title {
+  font-size: 1.5rem;
+  transition: color 0.3s; /* Smooth color transition for title */
+}
+
+.toggle-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+main {
+  padding: 2rem;
+}
+
+.item-input {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#item-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#add-item {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-item:hover {
+  background-color: #218838;
+}
+
+#item-list {
+  list-style-type: none;
+}
+
+#item-list li {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#item-list button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#item-list button:hover {
+  background-color: #c82333;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Dark Mode (Engaged Mode) */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header.dark-mode {
+  background-color: #1f1f1f;
+  border-color: #444;
+}
+
+#app-title.dark-mode {
+  color: #ff4081; 
+}
+
+.toggle-button.dark-mode {
+  background-color: #ff4081;
+}
+
+.toggle-button.dark-mode:hover {
+  background-color: #e00062;
+}
+
+#add-item.dark-mode {
+  background-color: #6c757d;
+}
+
+  #add-item.dark-mode:hover {
+    background-color: #5a6268;
+  }
+
+  #item-list li.dark-mode {
+    border-color: #555;
+  }
+
+#item-list-section h2 {
+  margin-bottom: 1rem;
+}
